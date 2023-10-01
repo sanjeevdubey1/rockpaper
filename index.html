@@ -5,21 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <div class="container">
+        <h1>Rock Paper Scissors</h1>
         <div class="main">
-            <button onclick="playGame('rock')" >rock</button>
-            <button onclick="playGame('paper')">paper</button>
-            <button onclick="playGame('scissors')">scissors</button>
+            <button  class="circle" onclick="playGame('rock')" >✊</button>
+            <button  class="circle" onclick="playGame('paper')">🖐</button>
+            <button  class="circle" onclick="playGame('scissors')">✌</button>
             <button class="red" onclick="
           resetButton()
-            " >Reset Scores</button><br>
+            " >🗑️</button><br>
         </div>
         <div class="texts">
             <div id="scoremessage"></div>
          </div>
+         <div class="status">
+            <p>Status -</p>
+            <div id="results"></div>
+         </div>
+        
+            <div class="moves">
+                <p>Moves -</p>
+                <div id="moves"></div>
+            </div>
+
     </div>
+
+<!-- <-- second container--> 
+
+
+
+    <div class="comtainer2">
+        <div class="shiping_cal">
+            <input  class="inputText"  placeholder="Enter Your Price" name="" id="inputs">
+            <button onclick="calculate()" id="calButton" >Calculate</button>
+            <div id="output" class="output">$</div>
+        </div>
+
+    </div><script src="script2.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

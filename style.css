@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body{
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* background-image: url(https://steamcommunity.com/sharedfiles/filedetails/?id=1966836473); */
 }
 .container{
@@ -36,10 +38,29 @@ button{
     margin: 0 10px;
 }
 .red{
+    transition: 500ms;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     background-color: brown;
     border: none;
 }
+.red:hover{
+    font-size: 25px;
+    height: 55px;
+    width: 55px;
+    background-color: rgb(215, 23, 23);
+
+}
+h1{
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .texts{
+   justify-content: center;
     display: flex;
     align-items: center;
     box-shadow: 0 0 1px black;
@@ -47,7 +68,65 @@ button{
     /* padding: 10px; */
     border-radius: 5px;
     font-family:cursive;
-    width: auto;
+    width: 300px;
     height: 50px;
-    background-color: antiquewhite;
+    background-color: #fff;
+    /* transition: 3s; */
+}
+.circle{
+    transition: 500ms;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle:hover{
+    font-size: 25px;
+    height: 55px;
+    width: 55px;
+    background-color: aliceblue;
+}
+#scoremessage{
+    /* transition: 5s; */
+}
+#results{
+    transition: 500ms;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    /* padding: 10px; */
+    background-color:  rgba(2,11,24,255);
+    color: #fff;
+}
+#moves{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background-color:  rgba(2,11,24,255);
+}
+.status{
+    display: flex;
+    align-items: center;
+}
+.status p{
+    margin-right: 10px;
+    color: #fff;
+}
+.moves{
+    display: flex;
+    align-items: center;
+
+}
+.moves p{
+    margin-right: 10px;
+    color: #fff;
 }
